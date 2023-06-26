@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google sheet clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="thead-head">
+        <nav id="my-nav">
+            <h4>File</h4>
+            <h4 id="home">Home</h4>
+            <h4>Insert</h4>
+            <h4>Layout</h4>
+            <h4>Help</h4>
+        </nav>
+        <div id="thead-main">
+            <div id="current-cell-div">
+                <p id="current-cell"></p>
+            </div>
+            <div class="btns">
+                <button id="cut-button"><img src="./pictures/scissors.png" alt=""></button>
+                <button id="copy-button"><img src="./pictures/copy-paper.png" alt=""></button>
+                <button id="paste-button"><img src="./pictures/paste (1).png" alt=""></button>
+            </div>
+            <select id="font-family">
+                <option value="serif">Serif</option>
+                <option value="sans-serif">Sans Serif</option>
+                <option value="cursive">Cursive</option>
+                <option value="monospace">Monospace</option>
+            </select>
+            <select id="font-size">
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+            </select>
+            <div class="btns">
+                <button id="bold-btn"><b>B</b></button>
+                <button id="italics-btn"><b><i>I</i></b></button>
+                <button id="underline-btn"><u>U</u></button>
+            </div>
+            <div class="btns">
+                <button id="left-align"><img src="./pictures/left-align.png" alt=""></button>
+                <button id="center-align"><img src="./pictures/center-align.png" alt=""></button>
+                <button id="right-align"><img src="./pictures/right-align.png" alt=""></button>
+            </div>
+            
+            <!-- input for bg color -->
+            <lable for="bgColor"><b>Bg Color</b></lable>
+            <input type="color" id="bgColor"  />
+            <!-- <img src="bucket.png" alt="" id="myImage"> -->
+            <!-- .................. -->
+    
+            <!-- input for text color -->
+            <lable for="textColor"><b>Text Color</b></lable>
+            <input type="color" id="textColor" value="aaaa"/>
+            <!-- .................. -->
+            <!-- .................. -->
+            <button onclick="downloadJson()" id="dwnld-btn"><img src="./pictures/download.png" alt=""></button>
+            <!-- <input type="file" id="jsonFile" accept=".json" /> -->
+            
+            <!-- <button id="add-sheet-btn"><img src="plus.png" alt=""></button>
+            <h2 id="sheet-num">Sheet No. 1</h2>
+            
+            <button id="sheet-1">Sheet 1</button>
+            <button id="sheet-2">Sheet 2</button>
+            <button id="sheet-3">Sheet 3</button> -->
+        </div>
+    </div>
+    <table id="my-table">
+        <thead>
+            
+            <br />
+            <br />
+            <tr id="table-heading-row">
+                <!-- empty cell -->
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+
+</html>
